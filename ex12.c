@@ -16,6 +16,9 @@ int main(){
                             if(c!=a) {
                                 printf("il triangolo è scaleno\n");
                             }
+                            else{
+                                printf("il triangolo è isoscele\n");
+                            }
                         } else {
                             printf("il triangolo è isoscele\n");
                         }
