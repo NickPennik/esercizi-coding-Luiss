@@ -12,6 +12,5 @@ int main(){
     else{
         printf("i due numeri non sono multipli\n");
     }
-
     return 0;
 }

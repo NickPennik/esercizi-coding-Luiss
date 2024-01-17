@@ -1,10 +1,10 @@
-
+#include <stdio.h>
 int main(){
-int intero = 2;
-float r = 5.3; 
+    int intero = 2;
+    float r = 5.3; 
 
-printf("%d\n", intero);
-printf("%f\n", r);
+    printf("%d\n", intero);
+    printf("%f\n", r);
 
-return 0;
+    return 0;
 }
