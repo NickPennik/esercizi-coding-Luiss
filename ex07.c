@@ -2,6 +2,7 @@
 int main(){
     int a;
     int b;
+    
     printf("inserisci un numero\n");
     scanf(" %d", &a);
     printf("inserisci il secondo numero\n");

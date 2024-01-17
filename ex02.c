@@ -5,6 +5,5 @@ int main(){
 
     printf("%d\n", intero);
     printf("%f\n", r);
-
     return 0;
 }

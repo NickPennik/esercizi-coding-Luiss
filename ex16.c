@@ -10,10 +10,14 @@ void prova()
 }
 
 int main()
-{
-   prova();
-   prova();
-   prova();
-   prova();
-   return 0;
+{   
+    int i = 0;
+
+    while(i < 4)
+    {
+        prova();
+        i = i + 1;
+    }
+
+    return 0;
 }

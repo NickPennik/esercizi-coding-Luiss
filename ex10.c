@@ -16,7 +16,7 @@ int main(){
         }
         else 
         {
-        printf("l'anno non è bisestile\n");        
+            printf("l'anno non è bisestile\n");        
         }
     }
     return 0;

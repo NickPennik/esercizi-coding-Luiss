@@ -3,6 +3,7 @@ int main(){
     float a;
     float b;
     float c;
+    
     printf("Scrivi tre numeri per sapere se sono in progressione aritmetica\n");
     scanf(" %f\n", &a);
     scanf(" %f\n", &b);

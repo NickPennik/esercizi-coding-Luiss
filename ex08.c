@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
     float a;
+    
     printf("scrivi una temperatura in celsius\n");
     scanf(" %f", &a);
     if(a<-273.15){
