@@ -7,7 +7,7 @@ int main()
     printf("inserisci un numero per sapere se è un numero primo o meno\n");
     scanf(" %d", &a);
     i=a-1;
-    if(a>=1)
+    if(a>1)
     {
         while(a%i!=0)
         {
@@ -21,6 +21,10 @@ int main()
         {
             printf("il numero non è primo\n");
         }
+    }
+    else if(a=1)
+    {
+        printf("il numero è primo\n");
     }
     else 
     {
