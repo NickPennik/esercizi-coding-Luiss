@@ -12,13 +12,6 @@ int inverti()
     scanf("%d\n%d", &x, &y);
     printf("invertiamo il primo valore con il secondo\n");
     printf("%d\n", y);
-}
-
-int inverti2()
-{
-    int x;
-    int y;
-    
     printf("ed ora il secondo con il primo\n");
     printf("%d\n", x);
 }
@@ -32,6 +25,5 @@ int main()
         i= i+1;
         inverti();
     }
-    inverti2();
     return 0;
 }
