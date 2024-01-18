@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 float sqrtu(float delta)
 {
     float temp, radice;
@@ -30,8 +31,8 @@ int main()
     delta= b*b - 4*a*c;
     if(delta>0)
     {
-        x1=(-b + sqrtu(delta))/2*a;
-        x2=(-b - sqrtu(delta))/2*a;
+        x1=(-b + sqrtu(delta))/(2*a);
+        x2=(-b - sqrtu(delta))/(2*a);
         printf("i valori delle sue x sono %f e %f\n", x1, x2);
     }
     else if (delta<0)
@@ -40,8 +41,8 @@ int main()
     }
     else 
     {
-        x1=(-b + sqrtu(delta))/2*a;
-        x2=(-b - sqrtu(delta))/2*a;   
+        x1=(-b + sqrtu(delta))/(2*a);
+        x2=(-b - sqrtu(delta))/(2*a);   
         printf("il delta è uguale a %f\n", delta);
     }
     return 0;
