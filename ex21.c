@@ -1,48 +1,26 @@
 #include <stdio.h>
 
-float sqrtu(float delta)
-{
-    float temp, radice;
-
-    radice = delta / 2;
-    temp = 0;
-
-    while(radice != temp) {
-        temp = radice;
-        radice = ( delta/temp + temp) / 2;
-    }
-    return radice;
-}
 
 int main()
 {
-    float a;
-    float b;
-    float c;
-    float delta;
-    float x1;
-    float x2;
+    char lettera;
+    int a;
+    int e;
+    int i;
+    int o;
+    int u;
+
+    printf("inserisci una lettera per sapere se si tratta di una vocale o di una consonante\n");
+    scanf("%d", &lettera);
     
-    printf("inserisci tre variabili a, b e c da inserire nel delta\n");
-    scanf(" %f", &a);
-    scanf(" %f", &b);
-    scanf(" %f", &c);
-    delta= b*b - 4*a*c;
-    if(delta>0)
+    if (lettera == 97 || lettera== 101 || lettera==105 || lettera==111 || lettera==117) 
     {
-        x1=(-b + sqrtu(delta))/(2*a);
-        x2=(-b - sqrtu(delta))/(2*a);
-        printf("i valori delle sue x sono %f e %f\n", x1, x2);
+        printf("la tua lettera è una vocale\n");
     }
-    else if (delta<0)
+    else
     {
-        printf("l'equazione non ammette soluzioni reali poichè il delta è %f\n", delta);
+        printf("la tua lettera è una consonante o hai sbagliato a digitare la lettera\n");
     }
-    else 
-    {
-        x1=(-b + sqrtu(delta))/(2*a);
-        x2=(-b - sqrtu(delta))/(2*a);   
-        printf("il delta è uguale a %f\n", delta);
-    }
+
     return 0;
 }
