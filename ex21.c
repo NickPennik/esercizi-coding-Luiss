@@ -23,7 +23,6 @@ int main()
     float x1;
     float x2;
     
-
     printf("inserisci tre variabili a, b e c da inserire nel delta\n");
     scanf(" %f", &a);
     scanf(" %f", &b);
