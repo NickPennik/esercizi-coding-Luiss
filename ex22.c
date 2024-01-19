@@ -2,28 +2,27 @@
 
 #include <stdio.h>
 
-int inverti()
+void inverti(int *x, int *y)
 {
-    int x;
-    int y;
-    int i = 0;
+    int temp;
 
-    printf("assegnare due valori alle variabili x e y\n");
-    scanf("%d\n%d", &x, &y);
-    printf("invertiamo il primo valore con il secondo\n");
-    printf("%d\n", y);
-    printf("ed ora il secondo con il primo\n");
-    printf("%d\n", x);
+    temp = *x;
+    *x=*y;
+    *y=temp;
+   
 }
 
 int main()
 {
-    int i = 0;
+    int x;
+    int y;
 
-    while (i<1)
-    {
-        i= i+1;
-        inverti();
-    }
+    printf("assegnare due valori alle variabili x e y\n");
+    scanf("%d %d", &x, &y);
+    printf("x:%d e y:%d\n", x, y);
+
+    inverti(&x, &y);
+    printf("x:%d e y:%d\n", x, y);
+   
     return 0;
 }
