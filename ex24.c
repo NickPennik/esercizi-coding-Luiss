@@ -27,7 +27,9 @@ int main()
             scanf("%d", &num);
             if (num != 1)
             {
-                /break;
+                printf("Gli outfit consigliati per serata \"elegante\", sono i seguenti:");
+                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro");
+                break;
             }
         }
         else if(a==2)
@@ -36,7 +38,9 @@ int main()
             scanf("%d", &num);
             if (num != 1)
             {
-                /break;
+                printf("Gli outfit consigliati per serata \"tra amici\", sono i seguenti:");
+                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro");
+                break;
             }
         }
         else if(a==3)
@@ -45,16 +49,20 @@ int main()
             scanf("%d", &num);
             if (num != 1)
             {
-                /break;
+                printf("Gli outfit consigliati per serata \"disco\", sono i seguenti:");
+                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro");
+                break;
             }
         }
         else if(a==4)
         {
-            printf("Hai selezionato \"elegapranzo dalla nonna\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
+            printf("Hai selezionato \"pranzo dalla nonna\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
             scanf("%d", &num);
             if (num != 1)
             {
-                /break;
+                printf("Gli outfit consigliati per \"elpranzo dalla nonna\", sono i seguenti:");
+                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro");
+                break;
             }
         }
     }
