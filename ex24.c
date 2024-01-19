@@ -61,7 +61,7 @@ int main()
             scanf("%d", &num);
             if (num != 1)
             {
-                printf("Gli outfit consigliati per \"elpranzo dalla nonna\", sono i seguenti:\n");
+                printf("Gli outfit consigliati per \"pranzo dalla nonna\", sono i seguenti:\n");
                 printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
                 break;
             }
