@@ -52,7 +52,7 @@ int main()
             if (num != 1)
             {
                 printf("Gli outfit consigliati per serata \"elegante\", sono i seguenti:\n");
-                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
+                printf("1)Pantalone nero, camicia bianca, giacca nera\n2)Pantalone blu scuro, camicia bianca, giacca blu scuro\n3)Pantalone grigio chiaro, camicia nera, giacca nera\n4)Pantalone grigio scuro, camicia bianca, giacca grigio scuro\n");
                 break;
             }
         }
@@ -63,7 +63,7 @@ int main()
             if (num != 1)
             {
                 printf("Gli outfit consigliati per serata \"tra amici\", sono i seguenti:\n");
-                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
+                printf("1)Cargo beige, maglietta nera, maglione nero\n2)Jeans neri, maglietta bianca, felpa viola\n3)Blu jeans, maglietta bianca, felpa bianca\n4)Jeans grigio, magietta nera, felpa nera\n5)Tuta nera, maglietta bianca, felpa bianca\n6)Cargo beige, maglietta nera,  maglione rosso\n7)Tuta grigio chiaro, maglietta nera, felpa nera\n");
                 break;
             }
         }
@@ -74,7 +74,7 @@ int main()
             if (num != 1)
             {
                 printf("Gli outfit consigliati per serata \"disco\", sono i seguenti:\n");
-                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
+                printf("1)Blue jeans strappati, maglietta bianca\n2)Blue jeans, camicia bianca\n3)Blue jeans, maglietta nera\n4)Pantaloni neri, maglietta bianca\n");
                 break;
             }
         }
@@ -85,7 +85,7 @@ int main()
             if (num != 1)
             {
                 printf("Gli outfit consigliati per \"pranzo dalla nonna\", sono i seguenti:\n");
-                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
+                printf("1)Blue jeans, maglietta bianca, maglione blu scuro\n2)Jeans grigio chiaro, maglietta nera, maglione nero a collo alto\n3)Cargo beige, maglietta blu, maglione blu a collo alto\n4)Pantalone beige, maglietta nera, maglione nero a collo alto\n");
                 break;
             }
         }
