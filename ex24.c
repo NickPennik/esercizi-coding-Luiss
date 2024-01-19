@@ -1,12 +1,35 @@
 #include <stdio.h>
 
+int checkNum(char *on) 
+{
+    int err = 0;
+    int n = 0;
+    while (on[n] != '\0' && err == 0) 
+    {
+        if  (on[n] < 48 || on[n] > 57){
+            printf("Inserisci un numero per favore, adesso riprova\n");
+            err = 1;
+        }
+        n++;
+    }
+    return (err);
+}
+
 int main()
 {
     char stringa [1000];
     char eta;
     char altezza;
-    int a;
+    int an;
     int num = 1;
+    char a [30];
+    char b [30];
+    char c [30];
+    char d [30];
+    char e [30];
+    char f [30];
+    char g [30];
+    int j;
 
     while(num != 0)
     {
@@ -21,8 +44,8 @@ int main()
         printf("Bentornato %s, o in caso non ci conoscessi, benvenuto\n", stringa);
         printf("Ora che sappiamo che sei uno di noi possiamo passare alle domande veramente importanti.\n");
         printf("Che tipo di serata affronterai stasera\n1)elegante\n2)serata tra amici\n3)discoteca\n4)pranzo dalla nonna\n");
-        scanf(" %d", &a);
-        if(a==1)
+        scanf(" %d", &an);
+        if(an==1)
         {
             printf("Hai selezionato serata \"elegante\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
             scanf("%d", &num);
@@ -33,7 +56,7 @@ int main()
                 break;
             }
         }
-        else if(a==2)
+        else if(an==2)
         {
             printf("Hai selezionato serata \"tra amici\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
             scanf("%d", &num);
@@ -44,7 +67,7 @@ int main()
                 break;
             }
         }
-        else if(a==3)
+        else if(an==3)
         {
             printf("Hai selezionato serata \"disco\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
             scanf("%d", &num);
@@ -55,7 +78,7 @@ int main()
                 break;
             }
         }
-        else if(a==4)
+        else if(an==4)
         {
             printf("Hai selezionato \"pranzo dalla nonna\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
             scanf("%d", &num);
@@ -67,5 +90,91 @@ int main()
             }
         }
     }
+    printf("se pensi di fare serata, digita 3, se invece pensi di riuscire a controllarti premi un altro tasto\n");
+    scanf("%d", &j);
+    if (j==3)
+    {
+        printf("Ti consiglio di salvarti alcuni contatti (scrivi i numeri attacati fra loro):\n");
+        while(1)
+        {
+            printf("Mamma\n");
+            scanf(" %s", a); 
+            if(checkNum(a) == 1)
+            {
+                continue;
+            }
+            else 
+            {
+                printf("Mamma: %s\n", a);
+            }
+            printf("Papà\n");
+            scanf(" %s", b); 
+            if(checkNum(b) == 1)
+            {
+                continue ;
+            }
+            else 
+            {
+                printf("Papà: %s\n", b);
+            }
+            printf("Sorella/Fratello\n");
+            scanf(" %s", c);
+            if(checkNum(c) == 1)
+            {
+                continue ;
+            }
+            else 
+            {
+                printf("Sorella/Fratello: %s\n", c);
+            }
+            printf("Nonna\n");
+            scanf(" %s", d);
+            if(checkNum(d) == 1)
+            {
+                continue ;
+            }
+            else 
+            {
+                printf("Nonna: %s\n", a);
+            }
+            printf("Amico\n");
+            scanf(" %s", e);
+            if(checkNum(e) == 1)
+            {
+                continue ;
+            }
+            else
+            {
+                printf("Amico: %s\n", e);
+                break;
+            }        
+        }
+        printf("Ah, io bloccherei anche qualche numero ''proibito'', così per sicurezza:\n");
+        while (1)
+        {
+            printf("Ex fidanzata\n");
+            scanf(" %s", f); 
+            if(checkNum(f) == 1)
+            {
+                continue;
+            }
+            else 
+            {
+                printf("Ex: %s\n", f);
+            }
+            printf("Persona verso cui provi rancore\n");
+            scanf(" %s", g); 
+            if(checkNum(g) == 1)
+            {
+                continue;
+            }
+            else 
+            {
+                printf("Persona verso cui provi rancore: %s\n", g);
+                break;
+            }
+        }
+    }
+    printf("Buona serata allora, cerca di non fare danni ;)!\n");
     return 0;
 }
