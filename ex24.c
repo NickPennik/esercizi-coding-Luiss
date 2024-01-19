@@ -3,18 +3,19 @@
 int main()
 {
     char stringa [1000];
-    int eta;
-    int altezza;
+    char eta;
+    char altezza;
     int a;
     int num = 1;
 
-    while(num != 0){
+    while(num != 0)
+    {
         printf("Descrizione:");
         printf("Salve, anche tu qui perchè non sai come vestirti?\nBene, questo luogo è PERFETTO per te.\nInserisci i tuoi dati personali e consentici di poterti aiutare al meglio.\n");
         printf("età:");
-        scanf(" %d", &eta);
+        scanf(" %[^\t\n]s", &eta);
         printf("altezza in cm:");
-        scanf(" %d", &altezza);
+        scanf(" %[^\t\n]s", &altezza);
         printf("e infine il tuo nome utente: ");
         scanf(" %[^\t\n]s", stringa);
         printf("Bentornato %s, o in caso non ci conoscessi, benvenuto\n", stringa);
@@ -27,8 +28,8 @@ int main()
             scanf("%d", &num);
             if (num != 1)
             {
-                printf("Gli outfit consigliati per serata \"elegante\", sono i seguenti:");
-                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro");
+                printf("Gli outfit consigliati per serata \"elegante\", sono i seguenti:\n");
+                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
                 break;
             }
         }
@@ -38,8 +39,8 @@ int main()
             scanf("%d", &num);
             if (num != 1)
             {
-                printf("Gli outfit consigliati per serata \"tra amici\", sono i seguenti:");
-                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro");
+                printf("Gli outfit consigliati per serata \"tra amici\", sono i seguenti:\n");
+                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
                 break;
             }
         }
@@ -49,8 +50,8 @@ int main()
             scanf("%d", &num);
             if (num != 1)
             {
-                printf("Gli outfit consigliati per serata \"disco\", sono i seguenti:");
-                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro");
+                printf("Gli outfit consigliati per serata \"disco\", sono i seguenti:\n");
+                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
                 break;
             }
         }
@@ -60,8 +61,8 @@ int main()
             scanf("%d", &num);
             if (num != 1)
             {
-                printf("Gli outfit consigliati per \"elpranzo dalla nonna\", sono i seguenti:");
-                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro");
+                printf("Gli outfit consigliati per \"elpranzo dalla nonna\", sono i seguenti:\n");
+                printf("Infine, ci teniamo a specificare che i colori dei due capi sono interscambiabili tra di loro\n");
                 break;
             }
         }
