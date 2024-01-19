@@ -7,7 +7,7 @@ int checkNum(char *on)
     while (on[n] != '\0' && err == 0) 
     {
         if  (on[n] < 48 || on[n] > 57){
-            printf("Inserisci un numero per favore, adesso riprova\n");
+            printf("\33[31Inserisci un numero per favore, adesso riprova\n\033[0m");
             err = 1;
         }
         n++;
@@ -33,17 +33,17 @@ int main()
 
     while(num != 0)
     {
-        printf("Descrizione:");
-        printf("Salve, anche tu qui perchè non sai come vestirti?\nBene, questo luogo è PERFETTO per te.\nInserisci i tuoi dati personali e consentici di poterti aiutare al meglio.\n");
-        printf("età:");
+        printf("\033[33mDescrizione:");
+        printf("Salve, anche tu qui perchè non sai come vestirti?\nBene, questo luogo è PERFETTO per te.\nInserisci i tuoi dati personali e consentici di poterti aiutare al meglio.\n\033[0m");
+        printf("metà:");
         scanf(" %[^\t\n]s", &eta);
         printf("altezza in cm:");
         scanf(" %[^\t\n]s", &altezza);
         printf("e infine il tuo nome utente: ");
         scanf(" %[^\t\n]s", stringa);
-        printf("Bentornato %s, o in caso non ci conoscessi, benvenuto\n", stringa);
+        printf("\033[33mBentornato %s, o in caso non ci conoscessi, benvenuto\n", stringa);
         printf("Ora che sappiamo che sei uno di noi possiamo passare alle domande veramente importanti.\n");
-        printf("Che tipo di serata affronterai stasera\n1)elegante\n2)serata tra amici\n3)discoteca\n4)pranzo dalla nonna\n");
+        printf("Che tipo di serata affronterai stasera\033[0m\n1)elegante\n\033[0m2)\033[32mserata tra amici\n\033[0m3)\033[35mdiscoteca\n\033[0m4)\033[34mpranzo dalla nonna\n\033[0m");
         scanf(" %d", &an);
         if(an==1)
         {
@@ -58,7 +58,7 @@ int main()
         }
         else if(an==2)
         {
-            printf("Hai selezionato serata \"tra amici\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
+            printf("\033[32mHai selezionato serata \"tra amici\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n\033[0m");
             scanf("%d", &num);
             if (num != 1)
             {
@@ -69,7 +69,7 @@ int main()
         }
         else if(an==3)
         {
-            printf("Hai selezionato serata \"disco\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
+            printf("\033[35mHai selezionato serata \"disco\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n\033[0m");
             scanf("%d", &num);
             if (num != 1)
             {
@@ -80,7 +80,7 @@ int main()
         }
         else if(an==4)
         {
-            printf("Hai selezionato \"pranzo dalla nonna\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n");
+            printf("\033[34mHai selezionato \"pranzo dalla nonna\", se non è la zona in cui volevi entrare, premere 1 per riavviare l'app,\nse invece pensi di essere nel luogo giusto, premi 2\n\033[0m");
             scanf("%d", &num);
             if (num != 1)
             {
@@ -90,11 +90,11 @@ int main()
             }
         }
     }
-    printf("se pensi di fare serata, digita 3, se invece pensi di riuscire a controllarti premi un altro tasto\n");
+    printf("\033[33mSe pensi di fare serata, digita 3, se invece pensi di riuscire a controllarti premi un altro tasto\n");
     scanf("%d", &j);
     if (j==3)
     {
-        printf("Ti consiglio di salvarti alcuni contatti (scrivi i numeri attacati fra loro):\n");
+        printf("Ti consiglio di salvarti alcuni contatti (scrivi i numeri attacati fra loro):\n\033[0m");
         while(1)
         {
             printf("Mamma\n");
@@ -149,7 +149,7 @@ int main()
                 break;
             }        
         }
-        printf("Ah, io bloccherei anche qualche numero ''proibito'', così per sicurezza:\n");
+        printf("\033[33mAh, io bloccherei anche qualche numero ''proibito'', così per sicurezza:\n\033[0m");
         while (1)
         {
             printf("Ex fidanzata\n");
@@ -175,6 +175,6 @@ int main()
             }
         }
     }
-    printf("Buona serata allora, cerca di non fare danni ;)!\n");
+    printf("\033[33mBuona serata allora, cerca di non fare danni ;)!\n\033[0m");
     return 0;
 }
