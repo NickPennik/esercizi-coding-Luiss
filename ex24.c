@@ -35,7 +35,7 @@ int main()
     {
         printf("\033[33mDescrizione:");
         printf("Salve, anche tu qui perchè non sai come vestirti?\nBene, questo luogo è PERFETTO per te.\nInserisci i tuoi dati personali e consentici di poterti aiutare al meglio.\n\033[0m");
-        printf("metà:");
+        printf("età:");
         scanf(" %[^\t\n]s", &eta);
         printf("altezza in cm:");
         scanf(" %[^\t\n]s", &altezza);
